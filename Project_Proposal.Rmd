@@ -8,11 +8,6 @@ output:
   pdf_document: default
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-
 ## R Markdown Project proposal
 
 
@@ -51,9 +46,9 @@ __Demographic variables__	 | __Financial variables__
 For Data wrangling, I would like to address the below points: 
 
 1. There are some categorical values which are not listed in the attribute information 
-    e.g. Education 0 (not listed), 5 (unknown), 6 (unknown)
-           Marital Status 0  (not listed)
-     I may decide to safely put them under "Other" category or exclude them since they are few in number.
+    e.g. Education 0,5,6 (not listed)
+         
+     I may decide to safely put them under "Other" (Education: 4) category or exclude them since they are few in number.
 
 2. Bill Statements: Some amounts of the monthly bill statements are negative. It needs to be investigated if the negative values can be interpreted as credit.
 
